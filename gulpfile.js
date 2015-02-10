@@ -7,26 +7,26 @@ var gulp = require('gulp'),
 // all configs' path are related to this path
 // except requirejs and velocity config.
 cfg.BASE_DIR = 'src';
-// path for build task
+// path for build
 cfg.BUILD_DIR = 'build';
 
 // load tasks
 require('./lib/task.js')(gulp, cfg);
 
-// default: start server and livereload
+// default
 gulp.task('default', function() {
     var str = gutil.colors.green('\r\n' +
         '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\r\n' +
-        '              Welcome to use gulp-simple-vm\r\n' +
+        '              欢迎使用 gulp-simple-vm\r\n' +
         '--------------------------------------------------------------\r\n\r\n' +
-        'gulp build: build this project\r\n' +
+        'gulp build: 生成命令\r\n' +
         '   -[o|optimize]: optimize css, js and image files\r\n\r\n' +
-        'gulp server: start a server to view webpages\r\n' +
+        'gulp server: 启动http服务器\r\n' +
         '   -[o|optimize]: optimize css, js and image files\r\n' +
         '   -[w|watch]: watch files\' modifycation\r\n' +
         '   -[r|livereload]: start livereload server\r\n\r\n' +
-        'gulp deploy: rename "build" directory like "vyyyyMMdd[version]"\r\n' +
-        '   -v[version]: deploy version of today \r\n\r\n' +
+        'gulp deploy: 重命名"build"目录为"vyyyyMMdd[version]"格式\r\n' +
+        '   -v[version]: 当天布署的次数作为版本号 \r\n\r\n' +
         '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\r\n');
 
     console.log(str);
