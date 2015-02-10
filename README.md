@@ -1,7 +1,7 @@
 gulp-simple-vm
 ==============
 
-基于gulp的前端自动化构建工具，内置LESS, requirejs和velocity。
+基于gulp的前端自动化构建工具，内置LESS、requirejs和velocity。
 
 自动监听并编译LESS文件、利用r.js对requirejs进行合并和压缩、合并和压缩js文件、解析velocity模板。
 
