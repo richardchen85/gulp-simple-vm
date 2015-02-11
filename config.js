@@ -7,6 +7,8 @@ module.exports = {
     'appPort': 8008,
     // port for livereload
     'lrPort': 4003,
+    // server default page
+    'homePage': '',
     // if is true, will optimize css, js and images
     'optimize': false,
     'less': {
@@ -56,7 +58,7 @@ module.exports = {
         },
         // files for watch, path related to config.root
         'watchList': [
-            'index.vm'
+            { 'src': 'index.vm', 'out': 'index.html' }
         ],
         // this config is related BASE_PATH in task.js
         'out': ''

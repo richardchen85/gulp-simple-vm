@@ -25,7 +25,7 @@ gulp.task('default', function() {
         '   -[o|optimize]: optimize css, js and image files\r\n' +
         '   -[w|watch]: watch files\' modifycation\r\n' +
         '   -[r|livereload]: start livereload server\r\n\r\n' +
-        'gulp deploy: 重命名"build"目录为"vyyyyMMdd[version]"格式\r\n' +
+        'gulp deploy: 复制VM文件和"build"目录为"vyyyyMMdd[version]"格式\r\n' +
         '   -v[version]: 当天布署的次数作为版本号 \r\n\r\n' +
         '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\r\n');
 
