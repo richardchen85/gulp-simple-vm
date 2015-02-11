@@ -18,8 +18,8 @@ src:<br>
   ----js: javascript文件夹<br>
   ----less: LESS文件夹<br>
   ----vm: velocity模板文件夹<br>
-  ----config.js: 工具配置文件<br>
-  ----gulpfile.js: gulp主文件
+config.js: 工具配置文件<br>
+gulpfile.js: gulp主文件
 
 可以通过修改 `config.js` 文件来配置自己需要的项目，默认开启LESS, requirejs和velocity模块。
 
