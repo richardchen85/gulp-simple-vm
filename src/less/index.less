@@ -1,25 +1,17 @@
 @charset "utf-8";
 
-// css reset
-@import "reset.less";
 
 // core variables and mixins
 @import "variables.less";
 @import "mixins.less";
 
-// utility classes
-@import "utilities.less";
-
-// css sprite
+// resets and dependencies
+@import "reset.less";
+@import "global.less";
 @import "sprites.less";
 
-body {
-    height:10000px;
-    p {
-        margin-bottom:10px;
-        padding:0 5px;
-        width:300px;
-        line-height:30px;
-        border:1px solid red;
-    }
-}
+// single pages
+//@import "index.less";
+
+// widgets
+//@import "header.less";
