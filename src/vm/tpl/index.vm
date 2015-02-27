@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/index.css" media="all">
 </head>
 <body>
+    #parse('/top.vm')
 	<p>this is a paragraph</p>
     <p>姓名：${name} 性别：${gender} 年龄：${age}</p>
     <!--<script src="app/lib/require.js" data-main="app/config.js"></script>-->
