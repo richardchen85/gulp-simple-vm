@@ -33,4 +33,4 @@ requirejs
 velocity
 ---------
 
-默认开启velocity模板引擎，每个.vm文件必需有对应的.js文件对其提供数据支持，js文件可以为空内容文件侧不提供任何数据。本工具使用 `gulp-velocity` 模块解析 velocity 模板，详情请查看：<https://github.com/winnieBear/gulp-velocity>。
+默认开启velocity模板引擎，每个.vm文件有对应的.json文件对其提供数据支持，如果json文件不存在或内容为空则不提供任何数据。本工具使用 `gulp-velocityjs` 模块解析 velocity 模板，详情请查看：<https://github.com/richard-chen-1985/gulp-velocityjs>。
