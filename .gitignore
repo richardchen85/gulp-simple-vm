@@ -2,8 +2,6 @@
 _gh_pages
 _site
 .ruby-version
-src/css
-src/js
 
 # Numerous always-ignore extensions
 *.diff
