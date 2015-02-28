@@ -11,30 +11,33 @@ module.exports = {
     'homePage': '',
     // if is true, will optimize css, js and images
     'optimize': false,
+    'cssDir': 'css',
+    'imageDir': 'img',
+    'jsDir': 'js',
+    'htmlDir': '',
     'less': {
         // root of less, for watching
         'dir': 'less',
-        'files': ['index.less'],
-        'out': 'css'
+        'files': ['index.less']
     },
-    'js': {
-        // directory of js files
-        'dir': 'js',
-        // concat config
-        'concat': [
-            {
-                'src': ['jquery.js', 'jquery.pin.js'],
-                'out': 'app.js',
-                'sourcemap': false
-            }
-        ]
-    },
+    'concat': [
+        {
+            'src': ['js/jquery.js', 'js/jquery.pin.js'],
+            'out': 'js/lib.js',
+            'sourcemap': false
+        },
+        {
+            'src': ['css/bootstrap.min.css', 'css/chosen.min.css', 'css/glyphicon.css'],
+            'out': 'css/lib.css',
+            'sourcemap': false
+        }
+    ],
     // see https://github.com/jrburke/r.js
     'requirejs': {
         'appDir': 'src/app',
         'baseUrl': './',
         'mainConfigFile': 'src/app/config.js',
-        'dir': 'app',
+        'dir': 'app', // will be replaced the same as 'BUID_DIR+jsDir'
         'removeCombined': true,
         'findNestedDependencies': true,
         'optimize': 'uglify2',
@@ -43,7 +46,7 @@ module.exports = {
             { 'name': 'lib/require', 'include': ['jquery'] }
         ]
     },
-    // see https://github.com/winnieBear/gulp-velocity
+    // see https://github.com/richard-chen-1985/gulp-velocityjs
     'velocity': {
         'dir': 'src/vm',
         'config': {
@@ -59,8 +62,6 @@ module.exports = {
         // files for watch, path related to config.root
         'watchList': [
             { 'src': 'index.vm', 'out': 'index.html' }
-        ],
-        // this config is related BASE_PATH in task.js
-        'out': ''
+        ]
     }
 }
