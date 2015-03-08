@@ -37,7 +37,7 @@ module.exports = {
         appDir: 'src/app',
         baseUrl: './',
         mainConfigFile: 'src/app/config.js',
-        dir: 'app', // will be replaced the same as 'BUID_DIR+jsDir'
+        dir: 'app',
         removeCombined: true,
         findNestedDependencies: true,
         optimize: 'uglify2',

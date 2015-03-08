@@ -23,7 +23,7 @@ gulp.task('default', function() {
         'Comamnds:\r\n\r\n' +
         '  build: build project to "build" directory\r\n' +
         '    -[o|optimize]: optimize css, js and image files\r\n\r\n' +
-        '  server: open http server, "build" as root，so use "gulp build" first\r\n' +
+        '  server: open http server, "build" as root\r\n' +
         '    -[o|optimize]: optimize css, js and image files\r\n' +
         '    -[b|browser]: auto open browser\r\n\r\n' +
         '  deploy: deploy static files to appPath (give -v to cdnPath)\r\n' +
