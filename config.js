@@ -38,6 +38,7 @@ module.exports = {
         baseUrl: './',
         mainConfigFile: 'src/app/config.js',
         dir: 'app',
+        keepBuildDir: true,
         removeCombined: true,
         findNestedDependencies: true,
         optimize: 'uglify2',

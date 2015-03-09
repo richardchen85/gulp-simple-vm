@@ -20,6 +20,7 @@
     "gulp-velocityjs": "^1.0.3",
     "imagemin-pngquant": "^4.0.0",
     "minimist": "^1.1.0",
+    "node-watch": "^0.3.4",
     "q": "^1.2.0",
     "requirejs": "^2.1.15",
     "run-sequence": "^1.0.2"
