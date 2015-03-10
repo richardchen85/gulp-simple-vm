@@ -3,15 +3,18 @@ var gulp = require('gulp'),
     gutil = require('gulp-util'),
     cfg = require('./config.js');
 
-// base path of config
-// all configs' path are related to this path
-// except requirejs and velocity config.
-cfg.BASE_DIR = 'src';
-// path for build
-cfg.BUILD_DIR = 'build';
-
 // load tasks
-require('./lib/task.js')(gulp, cfg);
+require('./lib/less.js')(gulp, cfg);
+require('./lib/imagemin.js')(gulp, cfg);
+require('./lib/concat.js')(gulp, cfg);
+require('./lib/requirejs.js')(gulp, cfg);
+require('./lib/vm.js')(gulp, cfg);
+require('./lib/clean.js')(gulp, cfg);
+require('./lib/watch.js')(gulp, cfg);
+require('./lib/livereload.js')(gulp, cfg);
+require('./lib/build.js')(gulp, cfg);
+require('./lib/server.js')(gulp, cfg);
+require('./lib/deploy.js')(gulp, cfg);
 
 // default
 gulp.task('default', function() {

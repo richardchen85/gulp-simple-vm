@@ -9,6 +9,10 @@ module.exports = {
     lrPort: 4003,
     // server default page
     homePage: '',
+    // project source files directory
+    baseDir: 'src',
+    // output directory
+    buildDir: '.build',
     // if is true, will optimize css, js and images
     optimize: false,
     cssDir: 'css',
