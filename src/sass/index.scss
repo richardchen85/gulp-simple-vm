@@ -1,0 +1,16 @@
+$blue: blue;
+$margin: 20;
+
+.content-navigation {
+  border-color: $blue;
+  color: darken($blue, 9%);
+  img {
+    border:0;
+  }
+}
+
+.border {
+  padding: $margin / 2;
+  margin: $margin / 2;
+  border-color: $blue;
+}

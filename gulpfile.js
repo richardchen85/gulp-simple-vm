@@ -5,6 +5,7 @@ var gulp = require('gulp'),
 
 // load tasks
 require('./lib/less.js')(gulp, cfg);
+require('./lib/sass.js')(gulp, cfg);
 require('./lib/imagemin.js')(gulp, cfg);
 require('./lib/concat.js')(gulp, cfg);
 require('./lib/requirejs.js')(gulp, cfg);

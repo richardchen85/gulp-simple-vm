@@ -24,6 +24,11 @@ module.exports = {
         dir: 'less',
         files: ['index.less']
     },
+    sass: {
+        // root of sass, for watching
+        dir: 'sass',
+        files: ['index.scss']
+    },
     concat: [
         {
             src: ['js/jquery.js', 'js/jquery.pin.js'],
@@ -47,7 +52,7 @@ module.exports = {
         findNestedDependencies: true,
         optimize: 'uglify2',
         modules: [
-            { name: 'config', exclude: ['jquery'] }, 
+            { name: 'config', exclude: ['jquery'] },
             { name: 'lib/require', include: ['jquery'] }
         ]
     },
