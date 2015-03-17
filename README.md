@@ -1,9 +1,9 @@
 gulp-simple-vm
 ==============
 
-基于gulp的前端自动化构建工具，内置LESS、requirejs和velocity。
+基于gulp的前端自动化构建工具，内置LESS、SASS、requirejs和velocity。
 
-自动监听并编译LESS文件、利用r.js对requirejs进行合并和压缩、合并和压缩js文件、解析velocity模板。
+自动监听并编译LESS、SASS文件、利用r.js对requirejs进行合并和压缩、合并和压缩js文件、解析velocity模板。
 
 documents
 ===========
@@ -17,11 +17,12 @@ src:<br>
   ----img: 图片文件夹<br>
   ----js: javascript文件夹<br>
   ----less: LESS文件夹<br>
+  ----sass: SASS文件夹<br>
   ----vm: velocity模板文件夹<br>
 config.js: 工具配置文件<br>
 gulpfile.js: gulp主文件
 
-可以通过修改 `config.js` 文件来配置自己需要的项目，默认开启LESS, requirejs和velocity模块。
+可以通过修改 `config.js` 文件来配置自己需要的项目，默认开启LESS, SASS, requirejs和velocity模块。
 
 关于 `config.js` 的详细设置进直接打开 `config.js` 文件查看。
 
