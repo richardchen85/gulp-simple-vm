@@ -5,8 +5,8 @@
 module.exports = {
     // port for express
     appPort: 8008,
-    // port for livereload
-    lrPort: 4003,
+    // open livereload or not
+    livereload: true,
     // server default page
     homePage: '',
     // project source files directory

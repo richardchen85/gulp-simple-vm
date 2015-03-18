@@ -1,0 +1,62 @@
+// clearfix
+@mixin clearfix() {
+    *zoom: 1;
+    &:before, &:after {
+        display: table;
+        line-height: 0;
+        content: "";
+    }
+    &:after {
+        clear:both;
+    }
+}
+// css3 transition 闪屏bug修复
+@mixin trans-fix() {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+// text overflow
+@mixin text-overflow() {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+// opacity
+@mixin opacity($opacity) {
+    opacity: $opacity / 100;
+    filter: alpha(opacity=$opacity);
+}
+// boxSizing
+@mixin boxSizing ($sizing) {
+    -webkit-box-sizing:$sizing;
+    -moz-box-sizing:$sizing;
+    box-sizing:$sizing;
+}
+// boxShadow
+@mixin boxShadow($shadow...) {
+    -webkit-box-shadow:$shadow;
+    -moz-box-shadow:$shadow;
+    -o-box-shadow:$shadow;
+    box-shadow:$shadow;
+}
+// transition
+@mixin transition($trans...) {
+    -webkit-transition:$trans;
+    -moz-transition:$trans;
+    -o-transition:$trans;
+    transition:$trans;
+}
+// transform
+@mixin transform($trans...) {
+    -webkit-transform:$trans;
+    -moz-transform:$trans;
+    -o-transform:$trans;
+    transform:$trans;
+}
+@mixin transformOrigin($origin...) {
+    -webkit-transform-origin:$origin;
+    -moz-transform-origin:$origin;
+    -o-transform-origin:$origin;
+    transform-origin:$origin;
+}
