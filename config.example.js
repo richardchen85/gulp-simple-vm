@@ -18,7 +18,7 @@ module.exports = {
     cssDir: 'css',
     imageDir: 'img',
     jsDir: 'js',
-    htmlDir: '',
+    htmlDir: 'html',
     less: {
         // root of less, for watching
         dir: 'less',
@@ -57,22 +57,10 @@ module.exports = {
         ]
     },
     // see https://github.com/richard-chen-1985/gulp-velocityjs
-    velocity: {
-        dir: 'src/vm',
-        config: {
-            // tpl root 
-            root: 'src/vm/tpl/',
-            encoding: 'utf-8',
-            //global macro defined file
-            macro: 'src/vm/tpl/global-macro/macro.vm',
-            globalMacroPath: 'src/vm/tpl/global-macro',
-            // test data root path
-            dataPath: 'src/vm/data/'
-        },
-        // files for watch, path related to config.root
-        watchList: [
-            { src: 'index.vm', out: 'index.html' }
-        ]
+    widget: {
+        // tpl root
+        root: 'src/widget/',
+        encoding: 'utf-8'
     },
     // copy static files to specified path
     deploy: {
@@ -82,4 +70,4 @@ module.exports = {
         // for folder named "vyyyyMMdd[version]" for CDN
         cdnPath: './static'
     }
-}
+};

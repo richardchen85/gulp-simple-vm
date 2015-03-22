@@ -1,0 +1,4 @@
+<div class="top">
+    <h1>欢迎使用$sys</h1>
+    <p>姓名：${name} 性别：${gender} 年龄：${age}</p>
+</div>

@@ -1,3 +1,4 @@
+@import "lib.scss";
 //
 // @css reset from KISSY CSS Reset
 // --------------------------------------------------
@@ -70,7 +71,7 @@ legend {
 
 // img 搭车：让链接里的 img 无边框
 fieldset, img {
-    border: none; 
+    border: none;
 }
 
 // 注：optgroup 无法扶正
@@ -93,4 +94,38 @@ hr {
 // webkit对按钮的默认样式
 input[type="submit"], input[type="reset"], input[type="button"], button {
     -webkit-appearance: none;
+}
+
+//
+// @global styles
+// --------------------------------------------------
+body {
+    height:10000px;
+    p {
+        margin-bottom:10px;
+        padding:0 5px;
+        width:300px;
+        line-height:30px;
+        border:1px solid red;
+    }
+}
+// float
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.clearfix {
+    @include clearfix;
+}
+// toggle content
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
+.invisible {
+    visibility: hidden;
 }

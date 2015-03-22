@@ -9,7 +9,7 @@ require('./lib/sass.js')(gulp, cfg);
 require('./lib/imagemin.js')(gulp, cfg);
 require('./lib/concat.js')(gulp, cfg);
 require('./lib/requirejs.js')(gulp, cfg);
-require('./lib/vm.js')(gulp, cfg);
+require('./lib/widget.js')(gulp, cfg);
 require('./lib/clean.js')(gulp, cfg);
 require('./lib/watch.js')(gulp, cfg);
 require('./lib/livereload.js')(gulp, cfg);
