@@ -19,16 +19,6 @@ module.exports = {
     imageDir: 'img',
     jsDir: 'js',
     htmlDir: 'html',
-    less: {
-        // root of less, for watching
-        dir: 'less',
-        files: ['index.less']
-    },
-    sass: {
-        // root of sass, for watching
-        dir: 'sass',
-        files: ['index.scss']
-    },
     concat: [
         {
             src: ['js/jquery.js', 'js/jquery.pin.js'],
@@ -59,8 +49,10 @@ module.exports = {
     // see https://github.com/richard-chen-1985/gulp-velocityjs
     widget: {
         // tpl root
-        root: 'src/widget/',
-        encoding: 'utf-8'
+        root: 'src/widget',
+        encoding: 'utf-8',
+        // concat js and css or not
+        combineStatic: true
     },
     // copy static files to specified path
     deploy: {
