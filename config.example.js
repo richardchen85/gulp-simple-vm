@@ -15,6 +15,12 @@ module.exports = {
     buildDir: '.build',
     // if is true, will optimize css, js and images
     optimize: false,
+    optimizeConfig: {
+        compatibility: 'ie7',
+        mangle: {
+            except:['$', 'require', 'exports', 'module']
+        }
+    },
     cssDir: 'css',
     imageDir: 'img',
     jsDir: 'js',
