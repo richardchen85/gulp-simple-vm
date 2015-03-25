@@ -84,8 +84,7 @@ module.exports = {
     deploy: {
         // path to webapp static resource directory
         appPath: './webapp',
-        // path to cdn directory, process.argv '-v[version]' must be given
-        // for folder named "vyyyyMMdd[version]" for CDN
-        cdnPath: './static'
+        // path to cdn directory
+        cdnPath: './static/1.0.0'
     }
 }

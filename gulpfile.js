@@ -31,7 +31,7 @@ gulp.task('default', function() {
         '    -[o|optimize]: optimize css, js and image files\r\n' +
         '    -[b|browser]: auto open browser\r\n\r\n' +
         '  deploy: deploy static files to appPath (give -v to cdnPath)\r\n' +
-        '    -v[version]: folder named "vyyyyMMdd[version]" for CDN\r\n\r\n' +
+        '    -v: shoose cfg.deploy.cdnPath\r\n\r\n' +
         '++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\r\n');
 
     console.log(str);
