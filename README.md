@@ -1,3 +1,8 @@
+停止更新说明
+============
+
+好吧，其实我本人已经转向[京东的jdf](https://github.com/putaoshu/jdf)和[百度的fis](https://github.com/fex-team/fis)了，这个项目停止更新了，当然作为对gulp感兴趣的同学，还是可以拿来学习学习，也是可以直接拿来用的。
+
 gulp-simple-vm
 ==============
 
