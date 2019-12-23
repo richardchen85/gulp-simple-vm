@@ -62,7 +62,7 @@ module.exports = {
             { name: 'lib/require', include: ['jquery'] }
         ]
     },
-    // see https://github.com/richard-chen-1985/gulp-velocityjs
+    // see https://github.com/richardchen85/gulp-velocityjs
     velocity: {
         dir: 'src/vm',
         config: {
